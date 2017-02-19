@@ -2,6 +2,12 @@
 An universal unit converter
 
 ### Installation
+You can install directly after cloning:
+```
+python setup.py install --user
+```
+
+Install with pip
 ```
 pip install chimp
 ```
