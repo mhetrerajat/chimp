@@ -28,6 +28,10 @@ Python 2.7.10 (default, Jul 30 2016, 19:40:32)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from chimp import Temperature
 >>> temp_conversion = Temperature()
+>>> temp_conversion.get_units()
+Use 'c' for 'Celsius'
+Use 'k' for 'Kelvin'
+Use 'f' for 'Fahrenheit'
 >>> temp_conversion.convert(232, to='f', from_='c')
 449.6
 >>>
