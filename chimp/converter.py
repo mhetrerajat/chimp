@@ -1,4 +1,6 @@
 from .exceptions.converter import NotAnNumericValue, ValueOutOfBound, InvalidConversionUnit, InvalidUnitType, ConversionUnitMissing, InputValueMissing
+from .units import TEMPERATURE_UNITS
+
 
 class Converter(object):
 	def __init__(self, default_unit, target_unit, _conversion_of, _input_upper_limit, _input_lower_limit):
@@ -50,4 +52,17 @@ class Converter(object):
 				raise ConversionUnitMissing(unit_type, self._conversion_of)
 		else:
 			raise InvalidUnitType(unit_type)
+
+
+	def get_units(self, help_=True):
+		if help_:
+			if self._conversion_of == 'temperature':
+				print('\n'.join(["Use '{0}' for '{1}'".format(k,v) for k,v in TEMPERATURE_UNITS.items()]))
+			else:
+				raise NotImplementedError("Invalid conversion method")
+		else:
+			if self._conversion_of == 'temperature':
+				print(TEMPERATURE_UNITS.keys())
+			else:
+				raise NotImplementedError("Invalid conversion method")
 
