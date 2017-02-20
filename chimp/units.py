@@ -3,5 +3,8 @@ TEMPERATURE_UNITS = {
 	"f" : "Fahrenheit",
 	"k" : "Kelvin",
 	"ra" : "Rankine",
-	"re" : "Reaumur"
+	"re" : "Reaumur",
+	"d" : "Delisle",
+	"n" : "Newton",
+	"ro" : "Romer"
 }
