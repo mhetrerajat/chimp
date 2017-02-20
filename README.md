@@ -18,7 +18,7 @@ python<version> -m pip install chimp
 ```
 
 ### Features
-1. Supports inter conversion of temperature units like celsius(c), fahrenheit(f) and kelvin(k) 
+1. Supports inter conversion of temperature units like celsius(c), fahrenheit(f), kelvin(k), rankine(ra), reaumur(re), delisle(d), newton(n) and romer(ro).
 
 ### Demo
 ```
