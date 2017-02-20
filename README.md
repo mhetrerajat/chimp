@@ -32,9 +32,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 Use 'c' for 'Celsius'
 Use 'k' for 'Kelvin'
 Use 'f' for 'Fahrenheit'
+Use 'ra' for 'Rankine'
+Use 're' for 'Reaumur'
 >>> temp_conversion.convert(232, to='f', from_='c')
 449.6
->>>
+>>> temp_conversion.rankine_to_reaumur(232)
+-115.408888889
 ```
 
 
