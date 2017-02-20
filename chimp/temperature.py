@@ -5,7 +5,20 @@ from .exceptions.temperature import TemperatureUnitNotFound
 from .units import TEMPERATURE_UNITS
 
 class Temperature(Converter):
+	"""
+		Attributes:
+			default_unit (str, optional) : Set default temperature unit
+			target_unit (str, optional) : Set target temperature unit
+	"""
 	def __init__(self, default_unit=None, target_unit=None):
+		"""
+			Initialize temperature instance
+
+			Args:
+				_conversion_of (str, private): As it is about temperature conversion, its value is temperature
+				_input_lower_limit (float, private): Minimum possible value of input that is acceptable
+				_input_upper_limit (float, private): Maximum possible value of input that is acceptable
+		"""
 		self._conversion_of = "temperature"
 		self._input_lower_limit = None
 		self._input_upper_limit = None
@@ -13,6 +26,15 @@ class Temperature(Converter):
 
 	
 	def _validate_unit(self, unit):
+		"""
+			Check whether given unit is valid temperature unit
+
+			Args:
+				unit (str) : Unit of temperature
+
+			Returns:
+				unit if successful else raise TemperatureUnitNotFound Exception
+		"""
 		_unit = TEMPERATURE_UNITS.get(unit)
 		if _unit:
 			return unit
@@ -21,6 +43,17 @@ class Temperature(Converter):
 
 
 	def convert(self, value, to=None, from_=None):
+		"""
+			Convert value from one unit to another
+
+			Args:
+				value (float) : Value to be converted
+				to (str) : Unit to which value will get converted
+				from_ (str) : Unit from which value will get convert.
+
+			Returns:
+				converted value if successful else appropriate exception will be thrown 
+		"""
 		from_unit = self._validate_unit(self._get_unit(from_, "from_"))
 		to_unit = self._validate_unit(self._get_unit(to, "to"))
 
