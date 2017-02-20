@@ -34,6 +34,9 @@ Use 'k' for 'Kelvin'
 Use 'f' for 'Fahrenheit'
 Use 'ra' for 'Rankine'
 Use 're' for 'Reaumur'
+Use 'd' for 'Delisle'
+Use 'n' for 'Newton'
+Use 'ro' for 'Romer'
 >>> temp_conversion.convert(232, to='f', from_='c')
 449.6
 >>> temp_conversion.rankine_to_reaumur(232)
