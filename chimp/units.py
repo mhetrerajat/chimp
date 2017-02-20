@@ -1,5 +1,7 @@
 TEMPERATURE_UNITS = {
 	"c" : "Celsius",
 	"f" : "Fahrenheit",
-	"k" : "Kelvin"
+	"k" : "Kelvin",
+	"ra" : "Rankine",
+	"re" : "Reaumur"
 }

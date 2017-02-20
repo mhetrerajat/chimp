@@ -2,7 +2,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "chimp"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 # To install the library, run the following
 #
@@ -19,7 +19,7 @@ setup(
     description="Chimp, an universal converter",
     author_email="mhetrerajat@gmail.com",
     author="Rajat Mhetre",
-    url="",
+    url="https://github.com/mhetrerajat/chimp",
     keywords=["Chimp", "converter", "unit", "temperature"],
     install_requires=REQUIRES,
     packages=find_packages(),
