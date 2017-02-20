@@ -18,6 +18,7 @@ setup(
     version=VERSION,
     description="Chimp, an universal converter",
     author_email="mhetrerajat@gmail.com",
+    author="Rajat Mhetre",
     url="",
     keywords=["Chimp", "converter", "unit", "temperature"],
     install_requires=REQUIRES,

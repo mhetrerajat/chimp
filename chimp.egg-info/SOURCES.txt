@@ -1,0 +1,12 @@
+setup.py
+chimp/__init__.py
+chimp/converter.py
+chimp/temperature.py
+chimp/units.py
+chimp.egg-info/PKG-INFO
+chimp.egg-info/SOURCES.txt
+chimp.egg-info/dependency_links.txt
+chimp.egg-info/top_level.txt
+chimp/exceptions/__init__.py
+chimp/exceptions/converter.py
+chimp/exceptions/temperature.py
